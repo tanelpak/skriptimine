@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#muljed
+#
+echo "Tanel Pak" # väljastab nimi
+echo "ISP217" # väljastab õppegrupi
+echo "Huvitav" # väljastab, kuidas aine tundub
+echo "Positiivne" # muljed
+#
+#skripti lõpp
