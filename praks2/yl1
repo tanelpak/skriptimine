@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#tervitusskript
+#
+echo -n "Tere, " # väljastab ilma reavahetuseta Tere,
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`
+echo -n `whoami | cut -c2-`
+echo "!" # väljasta ! ja tee reavahetus
+#
+# skripti lõpp
