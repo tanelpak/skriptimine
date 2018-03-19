@@ -25,3 +25,15 @@ git remote add skriptimine https://github.com/tanelpak/skriptimine.git
 
 b) git remote kontroll
 git remote -v
+
+
+põhikasutamine
+
+a)pane fail jälgimisele
+git add failinimi
+
+b) lisa kirjeldus muudatuse kohta
+git commit -m "kirejelduse lause"
+
+c) lisa kaugrepositooriumi
+git push -uf skriptimine master
