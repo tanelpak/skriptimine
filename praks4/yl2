@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#koogid ja tordid
+echo -n "Sisesta aluskandiku pikkus:"
+read pikkus
+echo -n "Sisesta aluskandiku laius: "
+read laius
+echo -n "Sisesta küpsiste pikkus: "
+read kookp
+echo -n "Sisesta küpsiste laius: "
+read kookl
+echo -n "Sisesta kihtide arv: "
+read kihid
+echo -n "Küpsiste arv pakis: "
+read pakk
+#kandiku pindala
+pindala=`expr $pikkus \* $laius`
+#küpsise pindala
+kpind=`expr $kookl \* $kookp`
+#küpsist kihis
+karv=`expr $pindala / $kpind`
+#mitu küpsist kokku
+kokku=`expr $karv \* $kihid`
+#mitu pakki küpsiseid
+mitupakki=`expr $kokku / $pakk`
+#mitu puudu täis pakki
+jaak=`expr $kokku % $pakk`
+echo "Kokku on vaja $mitupakki pakki ja $jaak küpsist"
+#
+#
+#skripti lõpp
