@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#näitab, kui pikalt arvuti on töötanud
+uptime | awk '{print "skriptimine at "$1,$2,$3,$4}' | tr -d ','
+#
+#
+#skripti lõpp 
