@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#otsib faile .log lõpuga var kataloogis
+find /var/* -name '*.log' 2>> /dev/null -exec wc -l {} \; | sort -rn
+#
+#
+#skripti lõpp
