@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#bussi kohtade arv
+echo -n "Sisestage reisijate arv: "
+read inimesed
+echo -n "Sisestage bussi istekohtade arv: "
+read istekohad
+# mitu bussi täidetakse
+busside_arv=`expr $inimesed % $istekohad`
+# mitu inimest maha jääb
+maha_jaab=`expr $inimesed % $istekohad`
+echo "Täielikust täidetakse $busside_arv bussi ja maha jääb $maja_jaab inimest"
+#
+#
+#skripti lõpp
