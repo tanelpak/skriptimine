@@ -1,0 +1,20 @@
+#
+#!/bin/bash
+#
+#reisi korraldamine
+#
+echo -n "Sisestage reisijate arv:"
+read inimesed
+echo -n read "Sisestage bussi istekohtade arv:"
+read istekohad
+#mitu bussi täidetakse
+busside_arv=`expr $inimesed / $istekohad`
+#mitu kohta jääb puudu
+puudu=`expr $inimesed / $istekohad`
+if [ $puudu -eq 0]
+	then echo "Kokku on vaja `$busside_arv` bussi"
+	else echo "Kokku on vaja `expr $busside_arv + 1` bussi"
+
+fi
+#
+#skripti lõpp
