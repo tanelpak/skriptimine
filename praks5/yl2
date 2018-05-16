@@ -1,0 +1,24 @@
+#
+#!/bin/bash
+#
+#kolmnurga pindala arvutamine
+#
+#andmete lugemine
+#
+echo -n "Sisesta külje a pikkus: "
+read kylg1
+echo -n "Sisesta külje b pikkus: "
+read kylg2
+echo -n "Sisesta külje c pikkus: "
+read kylg3
+
+#
+#arvutamine
+#
+ymberm66t=$(echo "scale=2;$kylg1+$kylg2+$kylg3" | bc)
+pool=$(echo "scale=2;ymberm66t/2" | bc)
+pindala=$(echo "scale=2;sqrt($pool*($pool-$kylg1)*($pool-$kylg2)*($pool-$kylg3))" | bc)
+echo "Kolmnurga pindala on $pindala"
+#
+#skripti lõpp
+#
