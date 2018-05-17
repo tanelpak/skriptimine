@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#kujund
+echo -n "Sisesta ridade arv: "
+read r
+echo -n "Sisesta tärnide arv read: "
+read t
+for (( i = 1; i <= $r; i++ ))
+	do
+		echo -n "$i"
+		for (( j = 1; j <= $t; j++ ))
+			do
+				echo -n "*"
+		done
+		echo ""
+	done
+#
+#skripti lõpp
+#
